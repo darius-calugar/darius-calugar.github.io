@@ -1,0 +1,70 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+header {
+  @include card($brand-color, 8px, $shadow-color);
+  color: $brand-content-color;
+  margin: 0;
+  height: $header-height;
+  position: fixed;
+  inset: 0 0 auto 0;
+  display: flex;
+  z-index: 100;
+
+  #title-button {
+    font-size: 1.6em;
+    font-weight: 400;
+    color: $brand-content-color;
+    padding: 8px;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+
+    #logo {
+      width: 32px;
+      height: 32px;
+      padding: 0 8px;
+      background: linear-gradient($gradient-color-1, $gradient-color-2);
+      border-radius: 32px;
+    }
+  }
+
+  nav {
+    margin-left: auto;
+    display: block;
+
+    .nav-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: block;
+
+      .nav-button {
+        display: inline-block;
+
+        .nav-link {
+          @include flat-button($brand-content-color, $accent-color);
+          display: inline-block;
+          font-size: 1.2em;
+          font-weight: 500;
+          padding: 0 16px;
+          line-height: $header-height;
+          text-decoration-line: none;
+        }
+
+        .disabled-nav-link {
+          color: transparentize($brand-content-color, .75);
+          cursor: default;
+          display: inline-block;
+          font-size: 1.2em;
+          font-weight: 500;
+          padding: 0 16px;
+          line-height: $header-height;
+          text-decoration-line: none;
+        }
+      }
+    }
+  }
+}

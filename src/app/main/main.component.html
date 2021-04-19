@@ -1,0 +1,53 @@
+<main id="main">
+  <div id="main-content">
+    <div class="announcement">Seeking employment!</div>
+    <section class="section" id="home">
+      <h1 class="section-heading">This is me. Hello!</h1>
+      <div class="section-content">
+        <div class="section-row">
+          <div id="img-me-div">
+            <img id="img-me" src="assets/me.png" alt="">
+          </div>
+          <div>
+            <h3>
+              I am Darius Călugăr, a 2nd year computer science student at the Babeș Bolyai University.
+            </h3>
+            <br>
+            <h3>
+              Extremely passionate computer science student. Highly reliable and versatile developer that has
+              great respect towards clean software. Eager to expand my knowledge by learning from experineced menthors. During my university years I have acquired practical experience through working
+              in a small team on multiple passion projects, ranging from mobile applications to video games.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="projects">
+      <h1 class="section-heading">Noteworthy Projects</h1>
+      <div class="section-content">
+        <app-project-view *ngFor="let project of projects" [project]="project"></app-project-view>
+      </div>
+    </section>
+    <section class="section" id="competitions">
+      <h1 class="section-heading">Competitions</h1>
+      <div class="section-content">
+        <app-competition-view *ngFor="let competition of competitions" [competition]="competition"></app-competition-view>
+      </div>
+    </section>
+    <section class="section" id="contact">
+      <h1 class="section-heading">Contact Details</h1>
+      <div class="section-content">
+        <span>(+40) 749 286 215</span>
+        <a href="mailto:dariuscalugar55@gmail.com">dariuscalugar55@gmail.com</a>
+        <a href="https://www.linkedin.com/in/darius-calugar-996752171/">linkedin.com/in/darius-calugar-996752171</a>
+        <a href="https://github.com/darius-calugar">github.com/darius-calugar</a>
+      </div>
+      <h3 class="section-subheading">Other Links and Resources</h3>
+      <div class="section-content">
+        <a href="https://dariuscalugar.itch.io">dariuscalugar.itch.io</a>
+        <a href="https://twitter.com/calugar_darius">twitter.com/calugar_darius</a>
+        <a href="https://www.scs.ubbcluj.ro/~cdie2679/">scs.ubbcluj.ro/~cdie2679</a>
+      </div>
+    </section>
+  </div>
+</main>

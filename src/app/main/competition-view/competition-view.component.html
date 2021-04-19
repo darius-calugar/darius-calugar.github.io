@@ -1,0 +1,20 @@
+<div class="competition-div">
+  <h2 *ngIf="competition.placement !== null">
+    <b>{{competition.placement}}</b>
+    <sup *ngIf="competition.placement % 10 === 1">st</sup>
+    <sup *ngIf="competition.placement % 10 === 2">nd</sup>
+    <sup *ngIf="competition.placement % 10 === 3">rd</sup>
+    <sup *ngIf="competition.placement % 10 === 0 || competition.placement % 10 > 3">th</sup>
+  </h2>
+  <h2 *ngIf="competition.placement === null">
+    <b>Attended</b>
+  </h2>
+  <h3>{{competition.name}}</h3>
+  <h4>
+    <span>
+      <strong>{{competition.date}}</strong> - Team of {{competition.teamSize}}
+    </span>
+  </h4>
+  <a *ngIf="competition.certificateLink !== null" [href]="competition.certificateLink">certificate</a>
+</div>
+
