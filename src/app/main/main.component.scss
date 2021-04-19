@@ -1,0 +1,104 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+#main {
+  background: linear-gradient($gradient-color-1, $gradient-color-2);
+  margin-top: $header-height;
+}
+
+#main-content {
+  background: $surface-color;
+  margin: 0 12px;
+  box-shadow: $shadow-color 0 0 4px;
+}
+
+.announcement {
+  background-color: #22cc44;
+  color: #ffffff;
+  padding: 8px 0;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.section {
+  background-color: $background-color;
+  color: $brand-color;
+  box-shadow: transparentize($shadow-color, .8) 0 -4px 4px;
+  padding: 64px 0 64px 0;
+
+  .section-heading {
+    padding: 0 0 64px 0;
+    margin: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .section-subheading {
+    padding: 32px 0 16px 0;
+    margin: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .section-content {
+    padding: 0 32px;
+    margin: auto;
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &#projects .section-content {
+    max-width: 1200px;
+  }
+
+  &#competitions {
+    .section-content {
+      max-width: 1200px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      justify-items: center;
+    }
+  }
+
+  &#contact {
+    background-color: $brand-color;
+    color: $brand-content-color;
+
+    .section-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    a {
+      color: transparentize($brand-content-color, .5);
+    }
+  }
+
+}
+
+.section-row {
+  display: flex;
+  flex-direction: row;
+}
+
+#img-me-div {
+  box-shadow: $brand-color -48px -32px;
+  border-radius: 16px;
+
+  #img-me {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin-right: 32px;
+    border-radius: 16px;
+    box-shadow: $shadow-color 0 0 4px;
+  }
+}
+

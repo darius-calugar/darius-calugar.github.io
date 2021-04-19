@@ -1,0 +1,45 @@
+<div class="project-main-div">
+  <div class="project-detail">
+    <div class="project-detail-header">
+      <h2>
+        {{project.name}}
+      </h2>
+      <h4>
+        <strong>
+        <span>
+          {{project.startDate}}
+        </span> -
+          <span *ngIf="project.endDate != null">
+          {{project.endDate}}
+        </span>
+          <span *ngIf="project.endDate == null">
+          Ongoing
+        </span>
+        </strong>
+      </h4>
+      <h5 *ngIf="project.teamSize > 1">
+        Team of {{project.teamSize}}
+      </h5>
+    </div>
+    <div class="project-detail-content">
+      <p>
+        {{project.description}}
+      </p>
+      <div *ngFor="let link of project.links">
+        <a [href]="link">{{link}}</a>
+      </div>
+    </div>
+    <div class="project-technologies">
+      <img class="tech-logo" *ngFor="let techLogo of project.techLogoPaths" [src]="techLogo" alt="">
+    </div>
+  </div>
+  <div class="project-preview">
+    <app-image-preview [image]="project.imagePaths[0]"></app-image-preview>
+  </div>
+  <div class="project-lessons">
+    <h3>What I learned:</h3>
+    <ul>
+      <li *ngFor="let lesson of project.lessons">{{lesson}}</li>
+    </ul>
+  </div>
+</div>

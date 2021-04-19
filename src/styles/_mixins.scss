@@ -1,0 +1,21 @@
+@mixin card($background-color, $elevation, $shadow-color) {
+  background-color: $background-color;
+  box-shadow: $shadow-color 0 0 $elevation 0;
+}
+
+@mixin flat-button($color, $highlight-color) {
+  background-color: transparent;
+  color: $color;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  transition: all 50ms ease-out;
+
+  &:hover {
+    color: $highlight-color;
+  }
+
+  &:active {
+    color: transparentize($highlight-color, .5);
+  }
+}
