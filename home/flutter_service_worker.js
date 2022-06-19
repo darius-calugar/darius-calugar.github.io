@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "a54cc6a7a92804d68c921310334f7556",
+  "assets/AssetManifest.json": "03a1666397b59c2ab5e47eab2a78a6ba",
 "assets/assets/fonts/Coda-Regular.ttf": "1e6f946d72a5dc93b9cdf5e90efe907f",
 "assets/assets/fonts/fira-sans/FiraSans-Black.ttf": "608b764a1cc4218d10f27600ef530fa6",
 "assets/assets/fonts/fira-sans/FiraSans-Bold.ttf": "382e230417d252a0cb16c7d491b030c7",
@@ -14,7 +14,9 @@ const RESOURCES = {
 "assets/assets/fonts/fira-sans/FiraSans-Regular.ttf": "50e780b45678ae34cef52d3e5112bd0d",
 "assets/assets/fonts/fira-sans/FiraSans-SemiBold.ttf": "eb5e811f2fe0408c9d0a552fcf1fb390",
 "assets/assets/fonts/fira-sans/FiraSans-Thin.ttf": "8205dc3e1f7953b4f52ed6a23977a6be",
-"assets/assets/images/chess_auto_chess/logo.png": "93f03698de02094747f8f07067962f38",
+"assets/assets/images/chess_auto_chess/image_1.png": "d437e4b25f3004892c2238163ac46850",
+"assets/assets/images/chess_auto_chess/image_2.png": "9ae813960870d2641e5951e35a2bdc1b",
+"assets/assets/images/chess_auto_chess/logo.png": "dbd6f84dcad904bb79b5f9d6715a860d",
 "assets/FontManifest.json": "b7e7f93e28e08fb4d22cdc7b8d7747d9",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
 "assets/NOTICES": "91c6023c26eae5b00c86252500781aca",
@@ -34,9 +36,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "e2c07842d6273372cc0a4677b974a8e5",
-"/": "e2c07842d6273372cc0a4677b974a8e5",
-"main.dart.js": "44a641fa28827b47ed0e984c4452bf14",
+"index.html": "49e0f9350943b8da6e8fd41c4502656f",
+"/": "49e0f9350943b8da6e8fd41c4502656f",
+"main.dart.js": "b793ae0f0f9a706f418bb4d5a960d05e",
 "manifest.json": "e84a4c25e14eff78069ad4eb14f925da",
 "version.json": "e065c738f04a727a5f657092e1813152"
 };
