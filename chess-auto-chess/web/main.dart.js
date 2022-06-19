@@ -36369,7 +36369,7 @@ r=A.b(r.r,"_colorOverlayAnimation")
 s=r.b
 r=r.a
 q=q.a
-q=A.af(B.e.aF(255*s.a7(0,r.gl(r))),q>>>16&255,q>>>8&255,q&255)
+q=A.af(B.e.aF(255*(s.a7(0,r.gl(r))+0.01)),q>>>16&255,q>>>8&255,q&255)
 r=q}else r=B.Bp
 b.toString
 return new A.nu(new A.w3(r,B.yr),b,null)},
